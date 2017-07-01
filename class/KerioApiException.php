@@ -61,7 +61,7 @@ class KerioApiException extends Exception {
 	 * @param	array	Positional parameters in message
 	 * @return	void
 	 */
-	public function KerioApiException($message, $code = '', $positionalParameters = '', $request = '', $response = '') {
+	public function __construct($message, $code = '', $positionalParameters = '', $request = '', $response = '') {
 		$this->message = $message;
 
 		if (is_int($code) || is_string($code)) {
