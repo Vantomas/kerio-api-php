@@ -92,7 +92,7 @@ class KerioApiSocket implements KerioApiSocketInterface {
 	 * @param	integer	Timeout, optional
 	 * @return	boolean	True on success
 	 */
-	public function KerioApiSocket($hostname, $port, $timeout = '') {
+	public function __construct($hostname, $port, $timeout = '') {
 		/* Set host */
 		$this->hostname = $hostname;
 		$this->port = $port;
